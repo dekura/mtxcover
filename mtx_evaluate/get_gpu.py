@@ -2,11 +2,11 @@
 Author: Guojin Chen @ CUHK-CSE
 Homepage: https://gjchen.me
 Date: 2023-01-31 13:03:45
-LastEditTime: 2023-01-31 13:48:44
+LastEditTime: 2023-01-31 15:50:11
 Contact: cgjcuhk@gmail.com
 Description: get stitches and conflicts
 """
-from config import start, end
+from config import start, end, file_type
 
 
 
@@ -14,7 +14,7 @@ from config import start, end
 for i in range(start, end):
     print("="*50)
     print(i)
-    fp = f'/home/gjchen21/phd/projects/mtxcover/gpuresults/s{i}.txt'
+    fp = f'/home/gjchen21/phd/projects/mtxcover/gpuresults/{file_type}{i}.txt'
     all_arr = []
     with open(fp) as f:
         l = f.readlines()
